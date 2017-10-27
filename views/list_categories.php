@@ -13,8 +13,8 @@ while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) { // Fetch each item.
 	
 	// Print the item within some HTML:
 	echo '<li><h3>' . $row['category'] . ' </h3>
-                <p><img alt="' . $row['category'] . '" src="'.BASE_URL.'/products/' . $row['image'] . '" />' . $row['description'] . '<br />
-                <a href="'.BASE_URL.'/browse/' . $type . '/' . urlencode($row['category']) . '/' . $row['id'] . '" class="h4">View All ' . $row['category'] . ' Products</a></p>
+                <p><img alt="' . $row['category'] . '" src="'.BASE_URL.'products/' . $row['image'] . '" />' . $row['description'] . '<br />
+                <a href="'.BASE_URL.'browse/' . $type . '/' . urlencode($row['category']) . '/' . $row['id'] . '" class="h4">View All ' . $row['category'] . ' Products</a></p>
              </li>';	
 
 }
