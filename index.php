@@ -14,7 +14,7 @@ include('./includes/header.html');
 $r = mysqli_query($dbc, "CALL select_sale_items(false)");
 
 // Include the view:
-include('./views/home.html');
+include('./views/home.php');
 
 // Include the footer file:
 include('./includes/footer.html');

@@ -9,11 +9,11 @@ echo '<div class="wrapper">';
 if (mysqli_num_rows($r) > 0) {
 	
 	echo '<dl class="special fright">
-		<dt><a href="/shop/sales/">Sale Items</a></dt>';
+		<dt><a href="'.BASE_URL.'shop/sales/">Sale Items</a></dt>';
 
 	// Fetch each item:
    while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
-   	echo '<dd><a href="/shop/sales/#' . $row['sku'] . '" title="View This Product"><img alt="" src="/products/' . $row['image'] . '" /><span>' . $row['sale_price'] . '</span></a></dd>';
+   	echo '<dd><a href="'.BASE_URL.'shop/sales/#' . $row['sku'] . '" title="View This Product"><img alt="" src="'.BASE_URL.'products/' . $row['image'] . '" /><span>' . $row['sale_price'] . '</span></a></dd>';
    }
 	
 	echo '</dl>';

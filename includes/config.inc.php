@@ -48,7 +48,7 @@ DEFINE('CONTACT_EMAIL', 'you@example.com');
 
 // Determine location of files and the URL of the site:
 define('BASE_URI', '/Users/larryullman/Sites/ex2/');
-define('BASE_URL', 'coffee/');
+define('BASE_URL', 'http://localhost/Coffee_Ecommerce/');
 
 // For the complex HTML:
 define('BOX_BEGIN', '<!-- box begin --><div class="box alt"><div class="left-top-corner"><div class="right-top-corner"><div class="border-top"></div></div></div><div class="border-left"><div class="border-right"><div class="inner">');
