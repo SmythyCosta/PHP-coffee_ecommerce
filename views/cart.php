@@ -63,7 +63,7 @@ echo '<tr>
 </tr>
 ';
 
-echo '</table><br /><p align="center"><input type="submit" value="Update Quantities" class="button" /></form></p><br /><p align="center"><a href="https://' . BASE_URL . 'checkout.php" class="button">Checkout</a></p>';
+echo '</table><br /><p align="center"><input type="submit" value="Update Quantities" class="button" /></form></p><br /><p align="center"><a href="' . BASE_URL . 'checkout.php" class="button">Checkout</a></p>';
 
 echo BOX_END; 
 ?>

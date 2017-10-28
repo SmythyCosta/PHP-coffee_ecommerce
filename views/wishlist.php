@@ -1,7 +1,7 @@
 <?php echo BOX_BEGIN; ?>
 <h2>Your Wish List</h2>
 <p>Please use this form to update your wish list. You may change the quantities, move items to your cart for purchasing, or remove items entirely.</p>
-<form action="/wishlist.php" method="POST">
+<form action="<?php echo BASE_URL;?>wishlist.php" method="POST">
 <table border="0" cellspacing="8" cellpadding="6">
 	<tr>
 		<th align="center">Item</th>
@@ -21,7 +21,7 @@ while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
 		<td align="center"><input type="text" name="quantity[' . $row['sku'] . ']" value="' . $row['quantity'] . '" size="2" class="small" /></td>
 		<td align="right">$' . number_format($price, 2) . '</td>
 		<td align="right">$' . number_format($subtotal, 2) . '</td>
-		<td align="right"><a href="/cart.php?sku=' . $row['sku'] . '&action=move&qty=' . $row['quantity'] .'">Move to Cart</a><br /><a href="/wishlist.php?sku=' . $row['sku'] . '&action=remove">Remove from Wish List</a></td>
+		<td align="right"><a href="' . BASE_URL . 'cart.php?sku=' . $row['sku'] . '&action=move&qty=' . $row['quantity'] .'">Move to Cart</a><br /><a href="' . BASE_URL . 'wishlist.php?sku=' . $row['sku'] . '&action=remove">Remove from Wish List</a></td>
 	</tr>
 	';
 	
