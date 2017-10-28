@@ -2,7 +2,7 @@
 
 <h2>Your Shopping Cart</h2>
 <p>Please use this form to update your shopping cart. You may change the quantities, move items to your wish list for future purchasing, or remove items entirely. The shipping and handling cost is based upon the order total. When you are ready to complete your purchase, please click Checkout to be taken to a secure page for processing.</p>
-<form action="/cart.php" method="POST">
+<form action="<?php echo BASE_URL; ?>cart.php" method="POST">
 <table border="0" cellspacing="8" cellpadding="6">
 	<tr>
 		<th align="center">Item</th>
@@ -30,7 +30,7 @@ while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
 		<td align="center"><input type="text" name="quantity[' . $row['sku'] . ']" value="' . $row['quantity'] . '" size="2" class="small" /></td>
 		<td align="right">$' . $price . '</td>
 		<td align="right">$' . number_format($subtotal, 2) . '</td>
-		<td align="right"><a href="/wishlist.php?sku=' . $row['sku'] . '&action=move&qty=' . $row['quantity'] .'">Move to Wish List</a><br /><a href="/cart.php?sku=' . $row['sku'] . '&action=remove">Remove from Cart</a></td>
+		<td align="right"><a href="' . BASE_URL . 'wishlist.php?sku=' . $row['sku'] . '&action=move&qty=' . $row['quantity'] .'">Move to Wish List</a><br /><a href="'.BASE_URL.'cart.php?sku=' . $row['sku'] . '&action=remove">Remove from Cart</a></td>
 	</tr>
 	';
 	
