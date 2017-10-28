@@ -47,7 +47,6 @@ DEFINE('CONTACT_EMAIL', 'you@example.com');
 // ************ CONSTANTS *********** //
 
 // Determine location of files and the URL of the site:
-define('BASE_URI', '/Users/larryullman/Sites/ex2/');
 define('BASE_URL', 'http://localhost/Coffee_Ecommerce/');
 
 // For the complex HTML:
