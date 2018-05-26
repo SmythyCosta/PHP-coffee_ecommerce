@@ -67,7 +67,7 @@ if (mysqli_num_rows($r) > 0) {
 		include('./includes/handle_review.php');
 		
 		$r = mysqli_query($dbc, "CALL select_reviews('$type', $sp_cat)");
-		include('./views/review.php');
+		//include('./views/review.php');
 
 	}
 } else { // Include the "noproducts" page:
