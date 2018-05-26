@@ -26,6 +26,7 @@ echo '<h2>Welcome to Our Online Coffee House!</h2>
 </div>';
 
 echo BOX_END;
+
 echo BOX_BEGIN;
 
 echo '<h3>About Clever Coffee, Inc.</h3>
